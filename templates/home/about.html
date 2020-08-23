@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %} About {% endblock title %}
+
+{% block body %}
+{% load static %}
+
+<div class="container my-4">
+  <div class="row align-items-center">
+    <div class="col-12 col-md-5 col-lg-6 order-md-2">
+      <!-- Image -->
+      <img src="{% static 'icode.png' %}" width="700px" height="400px">
+    </div>
+    <div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
+      <!-- Heading -->
+      <h1 class="display-3 text-center text-md-left">
+        Welcome to <span class="text-primary">icode</span>. </h1>
+        <!-- Text -->
+        <p class="lead text-center tmd-left text-muted mb-6 mb-lg-8">
+          Learn , Think & Develop anything.
+        </p>
+    </div>
+  </div> <!-- / .row -->
+</div> <!-- / .container -->
+<div class="container">
+  <div class="container-row pt-4 mt-2">
+        <div class="media-container-row">
+            <div class="media-block" style="width: 50%;">
+                <h2 class="mbr-section-title pb-3 align-left mbr-fonts-style display-2">
+                    About us</h2>
+                <h3 class="mbr-section-subtitle pb-5 align-left mbr-fonts-style display-5">iCode is the website which you can learn computer language easily.</h3>
+            </div>
+            <div class="card-box" id="abc" style="background-image:url({% static 'bg.jpg' %})">
+              <h4 class="count card-title mbr-fonts-style mbr-white mbr-normal align-center display-1" align="center" style="color:white;"><b>10</b></h4>
+              <p class="mbr-text mbr-fonts-style mbr-white mbr-normal align-center display-4" align="center" style="color:white;">Programming Language</p>
+            </div>
+        </div>
+  </div>
+<br> <br>
+
+  <p><b>Computer code</b> or <b>program code</b> is the set of instructions forming a computer program which is executed by a computer. It is one of two components of the software which runs on computer hardware, the other being the data.
+</p>
+</p>
+  <p>In computing, <b>source code</b> is any collection of code, possibly with comments, written using a <i>human-readable</i> programming language, usually as plain text. The source code of a program is specially designed to facilitate the work of computer programmers, who specify the actions to be performed by a computer mostly by writing source code. The source code is often transformed by an assembler or compiler into binary machine code that can be executed by the computer. The machine code might then be stored for  execution at a later time. Alternatively, source code may be interpreted and thus immediately executed.
+</p>
+</div>
+<div class="my-3">
+        <img src="{% static 'pic1.png' %}" class="rounded-circle" alt="Cinque Terre" width="450px" > <b> ====>  </b>
+        <img src="{% static 'pic2.png' %}" class="rounded-circle" alt="Cinque Terre" width="450px"> <b> ====>  </b>
+        <img src="{% static 'pic3.png' %}" class="rounded-circle" alt="Cinque Terre"  width="450px" align="center">
+</div>
+<br><br>
+{% endblock %}

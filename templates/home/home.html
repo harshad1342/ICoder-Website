@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock title %}
+{% block homeactive %} active {% endblock %}
+
+{% block body %}
+{% load static %}
+<div class="container my-3">
+    <div class="jumbotron">
+          <h1 class="display-4">Welcome to iCode</h1>
+          <p class="lead"> </p>
+          <hr class="my-4">
+          <p>iCode is the one type of coding blog. which refers to creating computer programming code. In a more general sense, the word coding is used to refer to assigning a code</p>
+            <div align="center">
+                <img src="{% static 'code.jpg' %}"> <br>
+                <a class="btn btn-success btn-lg my-4"  href="/blog" role="button"> Go To Blog </a>
+            </div>
+
+    </div>
+</div>
+
+<div class="container" align="center">
+    <div class="py-5 text-center">
+        <h2> Checkout our blog page</h2>
+        <p class="lead"> you will love it blog</p>
+    </div>
+</div>
+<!--<div class="container" align="center">-->
+    <hr><h2 align="center" style="background-color:black; color:white;"> 3 Way to become Programmer</h2> <hr>
+    <div class="row" style="background-color:lightblue;">
+      <div class="col-lg-4" align="center">
+          <h2>Thinking</h2>
+            <div >
+                <img src="{% static 'thinking.jpg' %}" height="500px">
+            </div> <hr>
+        <p>Thinking is the cognitive activities you use to process information, solve problems, make decisions, and create new ideas.</p>
+      </div>
+       <div class="col-lg-4" align="center">
+          <h2>Getting Ideas</h2>
+            <div>
+                <img src="{% static 'gettingidea.jpg' %}" height="500px"> <hr>
+            </div>
+        <p> to start to believe things that are not true. He started to get ideas about his importance to the organization. Synonyms and related words.</p>
+       </div>
+       <div class="col-lg-4" align="center">
+          <h2>Success</h2>
+            <div>
+                <img src="{% static 'success.jpg' %}" height="500px"> <hr>
+            </div>
+        <p>.success is knowing that what you are doing is helping you and others lead a better, happier, healthier life.</p>
+       </div>
+    </div>
+</div>
+<div class="container">
+    <div class="card" style="width:50%" >
+        <div class="progress"><b>Java</b>&nbsp;
+          <div class="progress-bar" role="progressbar" style="width: 16.896%" aria-valuemin="0" aria-valuemax="100"></div><b>16.896%</b>
+        </div>
+        <div class="progress"><b>C</b>&nbsp;
+          <div class="progress-bar bg-success" role="progressbar" style="width: 15.773%" aria-valuemin="0" aria-valuemax="100"></div><b>15.773%</b>
+        </div>
+        <div class="progress">
+          <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80</div>
+        </div>
+    </div>
+</div>
+{% endblock %}
